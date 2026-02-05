@@ -1,3 +1,13 @@
+/*
+================================================
+DDL Script : Create Bronze Tables
+================================================
+Script Purpose :
+    This script creates tables in 'bronze' schema, dropping existing table if they already exist.
+    Run this script tp re-define the DDL structure of 'bronze' tables.
+================================================
+*/
+
 USE DataWarehouse;
 GO
 
@@ -148,3 +158,4 @@ DECLARE @start_time DATETIME, @end_time DATETIME
     PRINT 'Error Message' + CAST(ERROR_STATE() AS NVARCHAR)
     END CATCH 
 END
+
